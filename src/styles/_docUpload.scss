@@ -1,0 +1,98 @@
+
+#myFile{
+    display: none;
+}
+
+.doc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    border-radius: 7px;
+    padding: 1rem;
+    &__icon{
+        width: 10%;
+    }
+    &__text{
+        font-family: 'Graphik';
+        opacity: 50%;
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    &__upload{
+        background-color: #4299e1;
+        border-radius: 7.2px;
+        width: 25%;
+        height: 2rem;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: 'Graphik', sans-serif;
+        text-align: center;
+        padding: 0.5rem;
+        letter-spacing: 1px;
+        line-height: 1rem;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &__content{
+        //width: 60%;
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-size: 0.8rem;
+            text-decoration: underline;
+        }
+    }
+    &__title{
+        margin: 0;
+        font-family: 'Graphik';
+        font-weight: 500;
+    }
+    &__subtitle{
+        font-family: 'Graphik';
+        margin: 0;
+        font-size: 0.8rem;
+        color: #999999;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .doc{
+        &__title{
+            font-size: 0.8rem;
+        }
+        &__subtitle{
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 821px) {
+
+    .doc{
+        &__title{
+            font-size: 1rem;
+        }
+        &__subtitle{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1094px) {
+
+    .doc{
+        &__title{
+            font-size: 0.8rem;
+        }
+        &__subtitle{
+            font-size: 0.5rem;
+        }
+    }
+}
