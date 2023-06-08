@@ -48,7 +48,7 @@ import {
             </Button>
           </Stack>
           <Flex w={'full'}>
-            <Image 
+            <Image
             src={heroIcon}/>
           </Flex>
         </Stack>
