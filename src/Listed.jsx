@@ -99,7 +99,7 @@ const Listed = ({ marketplace, nft, account }) => {
                     </TabPanel>
                     <TabPanel>
                         <div className="app__container">
-                            {soldItems.length > 0 && renderSoldItems(soldItems)}
+                            {renderSoldItems(soldItems)}
                         </div>
                     </TabPanel>
                 </TabPanels>
