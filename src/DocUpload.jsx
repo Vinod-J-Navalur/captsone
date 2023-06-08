@@ -6,18 +6,9 @@ const DocUpload = ({ title, subtitle, label, onChange, note }) => {
     
     const [url,setUrl] = useState('')
     
-
-    // useEffect(()=>{
-    //     async function fetchFile(note){
-    //         const res = await dispatch(getFile(note))
-    //         if(res){
-    //             setUrl(res.url)
-    //         }
-    //     }
-    //     if(note){
-    //         fetchFile(note)
-    //     }
-    // },[note])
+    useEffect(()=>{
+        setUrl(note)
+    },[note])
 
     return (
         <div className="doc__container">
