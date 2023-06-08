@@ -6,7 +6,10 @@ import {
     Text,
     Button,
     Icon,
+    Image,
   } from '@chakra-ui/react';
+
+  import heroIcon from './assets/hero.jpg'
   
   export default function Hero({web3Handler}) {
     return (
@@ -45,10 +48,8 @@ import {
             </Button>
           </Stack>
           <Flex w={'full'}>
-            <Illustration
-              height={{ sm: '24rem', lg: '28rem' }}
-              mt={{ base: 12, sm: 16 }}
-            />
+            <Image 
+            src={heroIcon}/>
           </Flex>
         </Stack>
       </Container>
